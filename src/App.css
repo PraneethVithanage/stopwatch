@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+body {
+  background: url("images/background.jpg");
+
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.clock-holder{
+  
+  width:30%;
+  height:100%;
+  background:rgba(255, 255, 255, 0.123);
+  margin : 20px auto;
+  margin-left: 30px;
+  position: absolute;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.display-holder{
+  
+  width:50%;
+  height:200px;
+  background:rgba(255, 255, 255, 0.123);
+  margin : 20px auto;
+  margin-left: 500px;
+  position: absolute;
+  
+}
+.stopwatch{
+  padding: 30px 0px;
+  text-align:center;
+}
+.display{
+  padding: 20px 0px;
+  text-align:center;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.stopwatch .stopwatch-btn-gre{
+  border: 2px solid rgb(63, 63, 61);
+  color:  rgb(63, 63, 61);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.stopwatch .stopwatch-btn-gre:hover{
+  border: 2px solid  rgb(63, 63, 61);
+  background:  rgb(63, 63, 61);
+  color: #fff;
 }
+
+
+.time {
+  font-size: 3rem;
+  padding: 2rem;
+  color: #fff;
+}
+
+.button {
+  padding: .6rem 1.5rem;
+  margin: .4rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .8rem;
+  border-style: groove;
+}
+
+h1{
+  color: #fff;
+  font-family: monospace;
+}
+
+.display span {
+  margin-top: 40px;
+  background:rgba(29, 32, 32, 0.233);
+  color:#fff;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 22px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 150px;
+}
+
+
